@@ -46,6 +46,10 @@ import java.util.regex.Pattern;
  *
  * Check in this application, what is wrong and what is missing to get an access token from
  * the authorization code grant type from OAuth2.
+ *
+ * Attention!! Use https://simulator-api.db.com/gw/oidc/managegrants/ to remove the consent from
+ * your app if it's given before. Otherwise you will get a NullpointerException after granting
+ * access to the scopes because you already granted the scope read_transactions before!
  */
 public class CallDbApiCashAccountTransactionsAuthCode {
 
